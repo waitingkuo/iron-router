@@ -702,8 +702,8 @@ Router.route('/post/:_id', {
     'MyFooter': {to: 'footer'}
   },
 
-  // a place to put your subscriptions
-  subscriptions: {
+  // a place to put your subscrs
+  subscriptions: function() {
     this.subscribe('items');
     
     // add the subscription to the waitlist
